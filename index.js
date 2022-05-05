@@ -135,6 +135,23 @@ var password=document.getElementById("password").value;
                         });
                     
                 } 
+                else if (username=="scheemala@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a6, //Required
+                            "name": myaccount.a6,
+                            // flat custom attributes
+                        });
+                    
+                } 
             else if (username=="vgande@gainsight.com") {
                     aptrinsic('identify', {
                             //User Fields
