@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+    <script src ="index.js"> </script>
+    <!-- bootstrap jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="maincontainer">
+
+	<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="content.html">Content</a>
+ <a href="product.html">Product</a>
+  <a href="contact.html">Contact</a>
+  <a href="payment.html" >Payment</a>
+  <a href="iframe.html" >KNOWLEDGE BASE</a>
+  <a href="index.html" onclick="deleteAllCookies()">Logout</a>
+  <!-- dummy -->
+  <!-- <div class="navbar"> -->
+	<!-- <a href="#home">Home</a>
+	<a href="#news">News</a> -->
+	<!-- <div class="dropdown">
+	  <button class="dropbtn">Dropdown
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	  </div>
+	</div> -->
+  <!-- </div> -->
+  <!-- dummy -->
+  
+</div>
+
+
+	
+	<div class="main-div">
+		<!-- bootstrap dropdown button -->
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Dropdown button
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </div>
+		  <!-- bootstrap dropdown button -->
+		<h1>Hello welcome to page!....</h1>
+		<h2>Welcome to Gainsight build Application</h2>
+		<!-- <h1 style="margin-top : 0px;">It is cool</h1> -->
+		<div>
+		<button type="button" class="disable-btn" disabled>Disabled Button!</button>
+		<button class="clickme-cls" >Click me zendesk bot</button>
+  		<button class="clickme-cls">Click me2</button>
+	</div>
+<!-- 	<script>
+		customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    shadow.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}
+    </p>
+    <button  type="button" class="shadowButton"  >Shadowed BUtton </button>
+`;
+  }
+});
+		</script> -->
+		
+	
+		<h3>please select the project</h3>
+
+			<select id="projectid">
+				<option value="">--please choose a project--</option>
+				<option id="projectName" label="Project-1">project1</option>
+				<option id="projectName" label="Project-2">project2</option>
+			</select>
+			
+			<script type="text/javascript">
+				document.getElementById('projectid').addEventListener('change',function(ev){
+					if(this.selectedIndex==1){
+						document.getElementById("projectName").innerHTML="project-1  ";
+						aptrinsic("track","projectchange",{"projname":"project-1","selected":true});
+					}
+					else{
+						document.getElementById("projectName").innerHTML="project-2  ";
+						aptrinsic("track","projectchange",{"projname":"project-2","selected":true});
+					}
+				});
+				
+				
+				
+				
+			</script>
+		
+		
+		<p>Display some text when the checkbox is checked:</p>
+
+<label for="myCheck">Checkbox:</label> 
+<input type="checkbox" id="myCheck" >
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<script>
+function myFunctioncheck() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+	<h1>Want to navigate to contact page?</h1>	
+	<h2>here you go!!</h2>
+	<button onclick="location.href = 'https://vineshgvk.github.io/Basic_Website/contact.html';aptrinsic('track','changepage');" id="myButton" class="float-left submit-button" >Contact page</button>
+		
+<a id="leftnav-knowledge-center" href="www.google.com" class="page-nav__page">
+	<div><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theverge.com%2F2015%2F9%2F1%2F9239769%2Fnew-google-logo-announced&psig=AOvVaw3UKjrZvP-auGTNCpJmq9ZB&ust=1637147254993000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOiSyPfenPQCFQAAAAAdAAAAABAD" width="24" height="24"></div>
+	Knowledge Center Bot</a>		
+		
+		
+
+	<div class="fr-element fr-view" dir="auto" contenteditable="true" aria-disabled="false" spellcheck="false">
+		
+			<div class="px-template-title">
+				<span style="font-size: 14px; color: rgb(0, 81, 114); font-family: Arial, Helvetica, sans-serif;">Please help us understand your objectives for using the D&amp;B Risk Analytics platform. This information will allow Dun &amp; Bradstreet to provide content and experiences that are most relevant for your day-to-day goals.</span></div>
+				<div style="text-align: left;"><br></div>
+				<div style="text-align: left;"
+				><strong><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Please choose all that apply:</span></strong></div></div>
+		
+		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+		making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
+			obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+			discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+			(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+			during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 
+			from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions 
+			from the 1914 translation by H. Rackham.</p>
+		<br>
+		<button class="clickme-clsses-trial">Click me test</button>
+		<button class="clickme-clsses-trial" >PX trigger custom</button>
+		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+		making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
+			obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+			discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+			(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+			during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 
+			from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions 
+			from the 1914 translation by H. Rackham.</p>
+		<br>
+		<button class="clickme-clsses-test">Click me test</button>
+		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+		making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more 
+			obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
+			discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+			(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+			during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 
+			from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions 
+			from the 1914 translation by H. Rackham.</p>
+		<br>
+		<button class="clickme-clsses-trial-test">Click me test</button>
+		
+	</div>
+<!-- function testzendeskbot(){
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8"> </script>
+} -->
+
+</body>
+
+</html>
