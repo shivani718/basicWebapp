@@ -138,7 +138,7 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a3
                             // flat custom attributes
                         });
-                    
+                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
                 } 
                 else if (username=="scheemala@gainsight.com") {
                     aptrinsic('identify', {
@@ -155,7 +155,7 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a6
                             // flat custom attributes
                         });
-                    
+                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
                 } 
 
                 else if (username=="shivanicheemala99@gmail.com") {
@@ -173,7 +173,7 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a7
                             // flat custom attributes
                         });
-                    
+                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
                 } 
                 else if (username=="shivani.reddy00@gmail.com") {
                     aptrinsic('identify', {
@@ -190,7 +190,7 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a8
                             // flat custom attributes
                         });
-                    
+                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
                 } 
 
 
@@ -209,27 +209,30 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a2
                             // flat custom attributes
                         });
-                } else {
-                    alert("Logged in user id :" + b);
-            //window.open("/HTML/home.html");
-            window.location = "https://shivani718.github.io/basicWebapp/home.html";
+                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
+                // } else {
+                    
+                //     // aptrinsic('identify', {
+                //     //         //User Fields
+                //     //         "id": id, // Required for logged in app users
+                //     //         "email": username
+
+                //     //         // "userHash": hash.toString()// optional transient for HMAC identification
+                //     //     },
+
+                //     //     {
+                //     //         //Account Fields
+                //     //         "id": myaccount.a1, //Required
+                //     //         "name": myaccount.a1
+                //     //         // flat custom attributes
+                //     //     });
+                // }
+
+        //     alert("Logged in user id :" + b);
+        //     //window.open("/HTML/home.html");
+        //     window.location = "https://shivani718.github.io/basicWebapp/home.html";
       
-            return false;
-                    // aptrinsic('identify', {
-                    //         //User Fields
-                    //         "id": id, // Required for logged in app users
-                    //         "email": username
-
-                    //         // "userHash": hash.toString()// optional transient for HMAC identification
-                    //     },
-
-                    //     {
-                    //         //Account Fields
-                    //         "id": myaccount.a1, //Required
-                    //         "name": myaccount.a1
-                    //         // flat custom attributes
-                    //     });
-                }
+        //     return false;
 
         }
         else
