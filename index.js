@@ -33,7 +33,7 @@ function zendeskchat(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-JAC5K0KYPLUW-2",config);
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-JAC5K0KYPLUW-2");
 
 // <!-- Gainsight PX Tag-->
 
@@ -90,7 +90,7 @@ var password=document.getElementById("password").value;
     }
 
     if(username!=""){
-        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
+        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivani.reddy00@gmail.com"|| username=="shivanicheemala99@gmail.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
@@ -152,6 +152,43 @@ var password=document.getElementById("password").value;
                         });
                     
                 } 
+
+                else if (username=="shivanicheemala99@gmail.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a7, //Required
+                            "name": myaccount.a7,
+                            // flat custom attributes
+                        });
+                    
+                } 
+                else if (username=="shivani.reddy00@gmail.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a8, //Required
+                            "name": myaccount.a8,
+                            // flat custom attributes
+                        });
+                    
+                } 
+
+
             else if (username=="vgande@gainsight.com") {
                     aptrinsic('identify', {
                             //User Fields
