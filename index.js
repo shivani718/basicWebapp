@@ -210,27 +210,26 @@ var password=document.getElementById("password").value;
                             // flat custom attributes
                         });
                 } else {
-                    aptrinsic('identify', {
-                            //User Fields
-                            "id": id, // Required for logged in app users
-                            "email": username
-
-                            // "userHash": hash.toString()// optional transient for HMAC identification
-                        },
-
-                        {
-                            //Account Fields
-                            "id": myaccount.a1, //Required
-                            "name": myaccount.a1
-                            // flat custom attributes
-                        });
-                }
-
-            alert("Logged in user id :" + b);
+                    alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
             window.location = "https://shivani718.github.io/basicWebapp/home.html";
       
             return false;
+                    // aptrinsic('identify', {
+                    //         //User Fields
+                    //         "id": id, // Required for logged in app users
+                    //         "email": username
+
+                    //         // "userHash": hash.toString()// optional transient for HMAC identification
+                    //     },
+
+                    //     {
+                    //         //Account Fields
+                    //         "id": myaccount.a1, //Required
+                    //         "name": myaccount.a1
+                    //         // flat custom attributes
+                    //     });
+                }
 
         }
         else
