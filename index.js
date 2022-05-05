@@ -170,8 +170,6 @@ var password=document.getElementById("password").value;
             alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
             window.location = "https://shivani718.github.io/basicWebapp/index.html";
-      
-            return false;
 
         }
         else
