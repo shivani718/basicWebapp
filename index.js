@@ -89,15 +89,12 @@ var password=document.getElementById("password").value;
         a1: "PX_Company-1",
         a2: "PX_Company-2",
         a3: "PX_Company-3",
-        a4: "PX_Company-4",
-        a6: "PX_Company-6",
-        a7: "PX_Company-7",
-        a4: "PX_Company-8"
+        a4: "PX_Company-4"
 
     }
 
     if(username!=""){
-        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivani.reddy00@gmail.com"|| username=="shivanicheemala99@gmail.com")&& password=="user" )
+        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
@@ -107,9 +104,7 @@ var password=document.getElementById("password").value;
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
-                            "email": username,
-                            "gender": "male"
-//
+                            "email": username
                             
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
@@ -118,7 +113,7 @@ var password=document.getElementById("password").value;
                         {
                             //Account Fields
                             "id": myaccount.a4, //Required
-                            "name": myaccount.a4
+                            "name": myaccount.a4,
                             // flat custom attributes
                         },
                         
@@ -135,65 +130,11 @@ var password=document.getElementById("password").value;
                         {
                             //Account Fields
                             "id": myaccount.a3, //Required
-                            "name": myaccount.a3
+                            "name": myaccount.a3,
                             // flat custom attributes
                         });
-                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
+                    
                 } 
-                else if (username=="scheemala@gainsight.com") {
-                    aptrinsic('identify', {
-                            //User Fields
-                            "id": id, // Required for logged in app users
-                            "email": username
-
-                            // "userHash": hash.toString()// optional transient for HMAC identification
-                        },
-
-                        {
-                            //Account Fields
-                            "id": myaccount.a6, //Required
-                            "name": myaccount.a6
-                            // flat custom attributes
-                        });
-                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
-                } 
-
-                else if (username=="shivanicheemala99@gmail.com") {
-                    aptrinsic('identify', {
-                            //User Fields
-                            "id": id, // Required for logged in app users
-                            "email": username
-
-                            // "userHash": hash.toString()// optional transient for HMAC identification
-                        },
-
-                        {
-                            //Account Fields
-                            "id": myaccount.a7, //Required
-                            "name": myaccount.a7
-                            // flat custom attributes
-                        });
-                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
-                } 
-                else if (username=="shivani.reddy00@gmail.com") {
-                    aptrinsic('identify', {
-                            //User Fields
-                            "id": id, // Required for logged in app users
-                            "email": username
-
-                            // "userHash": hash.toString()// optional transient for HMAC identification
-                        },
-
-                        {
-                            //Account Fields
-                            "id": myaccount.a8, //Required
-                            "name": myaccount.a8
-                            // flat custom attributes
-                        });
-                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
-                } 
-
-
             else if (username=="vgande@gainsight.com") {
                     aptrinsic('identify', {
                             //User Fields
@@ -206,33 +147,31 @@ var password=document.getElementById("password").value;
                         {
                             //Account Fields
                             "id": myaccount.a2, //Required
-                            "name": myaccount.a2
+                            "name": myaccount.a2,
                             // flat custom attributes
                         });
-                        window.location = "https://shivani718.github.io/basicWebapp/home.html";
-                // } else {
-                    
-                //     // aptrinsic('identify', {
-                //     //         //User Fields
-                //     //         "id": id, // Required for logged in app users
-                //     //         "email": username
+                } else {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
 
-                //     //         // "userHash": hash.toString()// optional transient for HMAC identification
-                //     //     },
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
 
-                //     //     {
-                //     //         //Account Fields
-                //     //         "id": myaccount.a1, //Required
-                //     //         "name": myaccount.a1
-                //     //         // flat custom attributes
-                //     //     });
-                // }
+                        {
+                            //Account Fields
+                            "id": myaccount.a1, //Required
+                            "name": myaccount.a1,
+                            // flat custom attributes
+                        });
+                }
 
-        //     alert("Logged in user id :" + b);
-        //     //window.open("/HTML/home.html");
-        //     window.location = "https://shivani718.github.io/basicWebapp/home.html";
+            alert("Logged in user id :" + b);
+            //window.open("/HTML/home.html");
+            window.location = "https://vineshgvk.github.io/Basic_Website/home.html";
       
-        //     return false;
+            return false;
 
         }
         else
