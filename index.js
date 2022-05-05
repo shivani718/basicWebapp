@@ -1,23 +1,23 @@
-var config={kcAllowedFuncNames:["zendeskchat"]};
+// var config={kcAllowedFuncNames:["zendeskchat"]};
 
-function zendeskchat(){
-    // api call for the chat bot
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.id = "ze-snippet";
-    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
-    //script.src="https://static.zdassets.com/ekr/snippet.js?key=f46f2180-8163-4da7-8ed2-3cd88d17fe22";
-    script.src="https://static.zdassets.com/ekr/snippet.js?key=ee4b2577-f8b1-4994-bd51-287764be0680";
+// function zendeskchat(){
+//     // api call for the chat bot
+//     var head = document.getElementsByTagName('head')[0];
+//     var script = document.createElement('script');
+//     script.id = "ze-snippet";
+//     // script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
+//     //script.src="https://static.zdassets.com/ekr/snippet.js?key=f46f2180-8163-4da7-8ed2-3cd88d17fe22";
+//     script.src="https://static.zdassets.com/ekr/snippet.js?key=ee4b2577-f8b1-4994-bd51-287764be0680";
 
-    script.onreadystatechange= handler1;
-    script.onload = handler1;
-    head.appendChild(script);
+//     script.onreadystatechange= handler1;
+//     script.onload = handler1;
+//     head.appendChild(script);
 
-    function handler1(){
-        console.log("chatbot added");
-    }
+//     function handler1(){
+//         console.log("chatbot added");
+//     }
 
-}
+// }
 //px self tag AP-K0EYK7ZWBNRU-2
 //Dileep's tag key AP-6WAJA3OATHHI-2
 //PX tag configuration
